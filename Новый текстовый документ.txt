@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#products">Продукция</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <h1>Орехи и сухофрукты</h1>
+      <p>Качественные продукты от проверенных поставщиков</p>
+    </header>
+  </body>
+</html>
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h1, p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html" class="active">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>О нашей компании</h1>
+        <p>Мы занимаемся поставкой орехов и сухофруктов в Беларусь уже более 5 лет. За это время мы наработали большой опыт и знания в области выбора качественных продуктов и организации доставки. Мы работаем напрямую с производителями, что позволяет нам гарантировать высокое качество продукции и конкурентные цены.</p>
+        <p>Наша цель - дать возможность нашим клиентам наслаждаться вкусными и полезными продуктами без каких-либо забот о доставке и качестве.</p>
+    </section>
+
+    <footer>
+        <p>ООО "Ореховая семья" &copy; 2023</p>
+    </footer>
+</body>
+</html>
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+<section class="advantages">
+  <div class="container">
+    <h2 class="section-title">Наши преимущества</h2>
+    <div class="advantage">
+      <img src="quality.png" alt="Качество товара">
+      <h3>Качество товара</h3>
+      <p>Все наши орехи и сухофрукты являются качественными, свежими и не лежат на складах.</p>
+    </div>
+    <div class="advantage">
+      <img src="price.png" alt="Конкурентные цены">
+      <h3>Конкурентные цены</h3>
+      <p>Мы предлагаем конкурентные цены на все виды орехов и сухофруктов.</p>
+    </div>
+    <div class="advantage">
+      <img src="delivery.png" alt="Быстрая доставка">
+      <h3>Быстрая доставка</h3>
+      <p>Мы доставляем заказы быстро и без задержек, используя сухогрузы для сохранения качества продукции.</p>
+    </div>
+  </div>
+</section>
+
+<section class="price-request">
+  <div class="container">
+    <h2 class="section-title">Хотите узнать наши цены?</h2>
+    <p class="section-description">Оставьте заявку и мы вышлем вам прайс-лист на нашу продукцию</p>
+    <form class="price-form" action="send-price.php" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Ваш Email" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Отправить</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="contact" class="section section-contact">
+  <div class="container">
+    <h2 class="section-heading">Свяжитесь с нами</h2>
+    <form class="contact-form" action="send_message.php" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="email" name="email" placeholder="Ваш Email" required>
+          <input type="text" name="phone" placeholder="Ваш телефон" required>
+        </div>
+        <div class="col-md-6">
+          <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Отправить сообщение</button>
+    </form>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">О нас</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="about-image" src="team.jpg" alt="Фото команды">
+      </div>
+      <div class="col-md-6">
+        <h3>Наша история</h3>
+        <p>Компания "Ореховый рай" была основана в 2005 году, когда наш основатель, Иван Иванов, начал импортировать орехи и сухофрукты из Турции и Ирана. За годы работы мы расширили свой ассортимент и начали поставлять орехи и сухофрукты из разных стран по всей Европе.</p>
+        <h3>Наши ценности</h3>
+        <ul>
+          <li>Качество продукции - мы тщательно отбираем каждую партию товара, чтобы гарантировать свежесть и вкусность наших орехов и сухофруктов.</li>
+          <li>Прозрачность - мы честно сообщаем о происхождении нашей продукции, условиях хранения и доставки.</li>
+          <li>Ответственность - мы гарантируем качество и свежесть нашей продукции, и если вы не удовлетворены, мы готовы вернуть вам деньги или заменить товар.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Связаться с нами</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Мы всегда готовы ответить на ваши вопросы и предложения. Свяжитесь с нами по телефону, электронной почте или заполнив форму обратной связи ниже.</p>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Адрес: г. Минск, ул. Притыцкого, д. 23</li>
+                    <li><i class="fas fa-phone"></i> Телефон: +375 (29) 123-45-67</li>
+                    <li><i class="fas fa-envelope"></i> Электронная почта: info@nutsandfruits.by</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <form action="send.php" method="post">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="company-info">
+        <h3 class="footer-heading">О нашей компании</h3>
+        <p>Мы являемся крупнейшим поставщиком орехов и сухофруктов в Беларуси. У нас вы можете купить орехи и сухофрукты оптом по выгодным ценам.</p>
+      </div>
+      <div class="contact-info">
+        <h3 class="footer-heading">Контактная информация</h3>
+        <p><i class="fa fa-phone"></i> +375 (29) 123-45-67</p>
+        <p><i class="fa fa-envelope"></i> info@orehi.by</p>
+        <p><i class="fa fa-map-marker"></i> г. Минск, ул. Казинца, 15</p>
+      </div>
+      <div class="social-links">
+        <h3 class="footer-heading">Мы в социальных сетях</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 ООО "Орехи". Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.social-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin-right: 15px;
+}
+
+.social-links a {
+  color: #777;
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+
+<section id="contact">
+  <h2 class="section-title">Контакты</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Адрес: г. Минск, ул. Притыцкого, д. 54</p>
+    </div>
+    <div class="contact-info">
+      <i class="fas fa-phone"></i>
+      <p>Телефон: +375 29 123 45 67</p>
+    </div>
+    <div class="contact-info">
+      <i class="far fa-envelope"></i>
+      <p>Почта: info@nutsandfruits.by</p>
+    </div>
+    <div class="contact-info">
+      <i class="fab fa-instagram"></i>
+      <p>Instagram: <a href="https://www.instagram.com/nutsandfruits.by">@nutsandfruits.by</a></p>
+    </div>
+    <div class="contact-info">
+      <i class="fab fa-telegram-plane"></i>
+      <p>Telegram: <a href="https://t.me/nutsandfruitsby">@nutsandfruitsby</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>О нас</h3>
+      <p>Мы занимаемся продажей орехов и сухофруктов в Беларуси. Наша компания работает с проверенными поставщиками и гарантирует качество продукции.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Навигация</h3>
+      <ul>
+        <li><a href="#about">О компании</a></li>
+        <li><a href="#products">Продукция</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Социальные сети</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/nutsandfruits.by"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://t.me/nutsandfruitsby"><i class="fab fa-telegram-plane"></i>
+
+<div class="social-links">
+   <a href="https://www.facebook.com/mynutcompany" target="_blank"><i class="fab fa-facebook-f"></i></a>
+   <a href="https://www.instagram.com/mynutcompany" target="_blank"><i class="fab fa-instagram"></i></a>
+   <a href="https://www.linkedin.com/company/mynutcompany" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<div class="contact-info">
+   <h3>Контакты</h3>
+   <p><i class="fas fa-map-marker-alt"></i> Минск, Беларусь</p>
+   <p><i class="fas fa-phone-alt"></i> +375 (29) 123-45-67</p>
+   <p><i class="far fa-envelope"></i> info@mynutcompany.com</p>
+</div>
+
+<div class="contact-form">
+   <h3>Связаться с нами</h3>
+   <form action="submit-form.php" method="POST">
+      <input type="text" name="name" placeholder="Имя" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Сообщение" required></textarea>
+      <button type="submit" name="submit">Отправить</button>
+   </form>
+</div>
+
+<footer>
+   <div class="footer-container">
+      <div class="logo">
+         <img src="logo.png" alt="Мой ореховый компании">
+      </div>
+      <div class="footer-menu">
+         <ul>
+            <li><a href="#about-us">О нас</a></li>
+            <li><a href="#products">Продукты</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+         </ul>
+      </div>
+   </div>
+</footer>
+
+</body>
+</html>
